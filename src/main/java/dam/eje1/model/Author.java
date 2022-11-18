@@ -1,26 +1,21 @@
 package dam.eje1.model;
 
-public class Autor {
+public class Author {
 
-    private String iniciles;
-    private String nombre;
-    private String infoLibro;
+    private String initials;
+    private String name;
+    private String nationality;
+    
+    
 
-    public Autor(String iniciles, String nombre, String infoLibro) {
-        this.iniciles = iniciles;
-        this.nombre = nombre;
-        this.infoLibro = infoLibro;
+    public Author(String initials, String name, String nationality) {
+        this.initials = initials;
+        this.name = name;
+        this.nationality = nationality;
     }
 
-    public String getIniciles() {
-        return iniciles;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getInfoLibro() {
-        return infoLibro;
+    @Override
+    public String toString() {
+        return "Author: " + name + "(" + initials + ") - " + nationality;
     }
 }
